@@ -1,30 +1,47 @@
 import json
 
-with open(r"TREC_Washington_Post_collection.v2.jl", encoding="utf8") as fp:
-	line = fp.readline()
-	dic = json.loads(line)
-	# print(line)
-	# print((dic))
-	for (key,values) in dic.items():
-		print(key,":",values,"\n")
-		# print(len(values),type(values))
 
-		# for i in len(values):
-		# try:
+def extractArticles(path,no_of_articles):
+	with open(path, encoding="utf8") as fp:
+		line = fp.readline()
+		count = 1
+		while line:
+			dic = json.loads(line)
+			title = dic['title']
+			
+			content = ""
 
+			for i,(key,values) in enumerate(dic.items()):
+				## outputs all the key and value pairs
+				# print(key,":",values,"\n")
 
+				try:
+					l = len(dic[key])
+					# print(type(dic[key]),len(dic[key]))
 
-'''
-   while line:
-       # print("Line {}: {}".format(cnt, line.strip()))
-       # print(json.loads(line.strip()))
-       # dline=dict(line)
-       print((line))
-       line = fp.readline()
-       cnt += 1
-       if cnt > 1:
-         break
-'''
+					for j in range(len(dic[key])):
+						# print(dic[key][0])
+						
+						for (key2,val2) in dic[key][j].items():
+							if key2 == "content":
+								## outputs all the content keys
+								content = dic[key][j][key2]
+								# print(key2,":",val2,"\n")
 
-# parse_json = json.loads(r"TREC_Washington_Post_collection.v2.jl", encoding="utf8")
-# print(parse_json)
+								## file writing for articles
+								with open("article{}.txt".format(count),"a+") as file:
+									# print("CONTENT",content)
+									file.write(str(content)+"\n")
+
+				except:
+					pass
+
+			line = fp.readline()
+			count+=1
+
+			print("\n\n\n<<<<<<<<########## NEXT ARTICLE {} ############>>>>>>".format(count))
+			if count > no_of_articles:
+				break
+
+if __name__ == '__main__':
+	extractArticles(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",10)

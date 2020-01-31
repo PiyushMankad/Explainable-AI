@@ -7,9 +7,6 @@ with open(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collec
 		dic = json.loads(line)
 		title = dic['title']
 		
-		## file writing
-		article = open("article{}.txt".format(count),"a+")
-		# article.write(title)
 		content = ""
 
 		for i,(key,values) in enumerate(dic.items()):
@@ -27,10 +24,12 @@ with open(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collec
 						if key2 == "content":
 							## outputs all the content keys
 							content = dic[key][j][key2]
-							print(key2,":",val2,"\n")
-							# print("CONTENT",content)
-							# content = content+val2+"\n"
-							# article.write(json.dumps(content),"\n")
+							# print(key2,":",val2,"\n")
+
+							## file writing for articles
+							with open("article{}.txt".format(count),"a+") as file:
+								# print("CONTENT",content)
+								file.write(str(content)+"\n")
 
 			except:
 				pass
@@ -38,7 +37,6 @@ with open(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collec
 		line = fp.readline()
 		count+=1
 
-		article.close()
 		print("\n\n\n<<<<<<<<########## NEXT ARTICLE {} ############>>>>>>".format(count))
-		if count >=1:
+		if count > 10:
 			break
