@@ -11,7 +11,7 @@ with open(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collec
 
 		for i,(key,values) in enumerate(dic.items()):
 			## outputs all the key and value pairs
-			# print(key,":",values,"\n")
+			print(key,":",values,"\n")
 
 			try:
 				l = len(dic[key])
