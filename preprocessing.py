@@ -3,6 +3,7 @@ import glob
 import re
 import readability
 
+from NLP_strategy import normalize_corpus
 
 numbers = re.compile(r'(\d+)')
 def numericalSort(value):
@@ -12,9 +13,12 @@ def numericalSort(value):
 
 def readable(file):
 	with open(file,"r+") as fp:
+		kicker = fp.readline()
 		filecontent = fp.readlines()
 
-	print(filecontent)
+	norm_corpus = normalize_corpus(filecontent)
+	# print(filecontent,kicker)
+	print(norm_corpus,kicker)
 
 
 
@@ -24,9 +28,9 @@ def traverseArticles():
 	counter = 1
 	for files in sorted(glob.glob(path+"\\*.txt"),key=numericalSort):
 		# print(files)
-		readable(files)
 		if counter > 1:
 			break
+		readable(files)
 		counter+=1
 
 
