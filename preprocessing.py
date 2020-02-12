@@ -15,10 +15,11 @@ def readable(file):
 	with open(file,"r+") as fp:
 		kicker = fp.readline()
 		filecontent = fp.readlines()
+		readability_score = readability.getmeasures(filecontent,lang="en")
 
-	norm_corpus = normalize_corpus(filecontent)
-	# print(filecontent,kicker)
-	print(norm_corpus,kicker)
+	norm_corpus, filecontent, clean_text = normalize_corpus(filecontent)
+	# print('\n\n Normalized Corpus\n {} \n \n Kicker \n {} \nReadablility score\n {}'.format(norm_corpus,kicker,readability_score))
+	print("Norm corpus\n {} \n\n File content\n {} \n\n Clean text\n {}".format((norm_corpus),(filecontent),(clean_text)))
 
 
 
