@@ -1,0 +1,4 @@
+readability
+nltk
+spacy
+beautifulsoup4

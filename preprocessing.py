@@ -22,7 +22,7 @@ def generateCSV(kicker,readability_score,norm_corpus,clean_text):
 	with open("data.csv","a+",newline='') as file:
 		writer = csv.writer(file)
 		writer.writerow([kicker,readability_score,norm_corpus,clean_text])
-	print(kicker,readability_score,norm_corpus,clean_text)
+	print(kicker,readability_score,type(norm_corpus),type(clean_text))
 
 
 
@@ -57,9 +57,9 @@ def traverseArticles():
 	path = os.getcwd()
 	print(path)
 	counter = 1
-	for files in sorted(glob.glob(path+"\\*.txt"),key=numericalSort):
+	for files in sorted(glob.glob(r"U:\Dissertation\Explainable-AI\folder"+"\\*.txt"),key=numericalSort):
 		# print(files)
-		if counter > 1:
+		if counter > 10000:
 			break
 		readable(files)
 		counter+=1
