@@ -5,6 +5,7 @@ import readability
 from NLP_strategy import normalize_corpus
 from sklearn.feature_extraction.text import TfidfVectorizer
 import csv
+import pandas as pd
 
 numbers = re.compile(r'(\d+)')
 def numericalSort(value):
@@ -12,18 +13,12 @@ def numericalSort(value):
     parts[1::2] = map(int, parts[1::2])
     return parts
 
-def make_vectors(doc):
-	vector = TfidfVectorizer()
-	docMatrix = vector.fit_transform(doc)
-	print(vector.get_feature_names())
-	print(docMatrix.shape)
 
 def generateCSV(kicker,readability_score,norm_corpus,clean_text):
 	with open("data.csv","a+",newline='') as file:
 		writer = csv.writer(file)
 		writer.writerow([kicker,readability_score,norm_corpus,clean_text])
 	print(kicker,readability_score,norm_corpus,clean_text)
-
 
 
 def convertNormCorpus(norm_corpus):
@@ -34,7 +29,6 @@ def convertNormCorpus(norm_corpus):
 		words += word
 
 	return words
-
 
 
 def readable(file):
@@ -50,9 +44,6 @@ def readable(file):
 
 	generateCSV(kicker,readability_score['readability grades']['FleschReadingEase'],norm_corpus,clean_text)
 
-
-
-
 def traverseArticles():
 	path = os.getcwd()
 	print(path)
@@ -64,6 +55,18 @@ def traverseArticles():
 		readable(files)
 		counter+=1
 
+
+
+def make_vectors(doc):
+	vector = TfidfVectorizer()
+	docMatrix = vector.fit_transform(doc)
+	print(vector.get_feature_names())
+	print(docMatrix.shape)
+
+def preprocessing():
+	data = pd.read_csv(r"E:\Intelligent Systems\Dissertation ####\Explainable-AI\data.csv")
+	labels = data.iloc[:,0]
+	X = data.iloc[:,1:-1]
 
 if __name__ == '__main__':
 	traverseArticles()
