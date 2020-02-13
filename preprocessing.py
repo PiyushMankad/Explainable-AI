@@ -7,6 +7,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import csv
 import pandas as pd
 
+
+
 numbers = re.compile(r'(\d+)')
 def numericalSort(value):
     parts = numbers.split(value)
@@ -62,11 +64,16 @@ def make_vectors(doc):
 	docMatrix = vector.fit_transform(doc)
 	print(vector.get_feature_names())
 	print(docMatrix.shape)
+  	
+
+
 
 def preprocessing():
 	data = pd.read_csv(r"E:\Intelligent Systems\Dissertation ####\Explainable-AI\data.csv")
 	labels = data.iloc[:,0]
 	X = data.iloc[:,1:-1]
 
+
 if __name__ == '__main__':
 	traverseArticles()
+	# preprocessing()
