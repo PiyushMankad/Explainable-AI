@@ -7,8 +7,14 @@ import re
 from bs4 import BeautifulSoup
 from contractions import CONTRACTION_MAP
 import unicodedata
+import os
 
 
+try:
+    nltk.download('stopwords')
+    os.system("python -m spacy download en_core_web_sm")
+except:
+    pass
 nlp = spacy.load('en_core_web_sm', parse=True, tag=True, entity=True)
 #nlp_vec = spacy.load('en_vecs', parse = True, tag=True, #entity=True)
 tokenizer = ToktokTokenizer()

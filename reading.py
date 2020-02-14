@@ -29,7 +29,7 @@ def extractArticles(path,no_of_articles):
 								# print(key2,":",val2,"\n")
 
 								## file writing for articles
-								with open("article{}.txt".format(count),"a+") as file:
+								with open("folder/article{}.txt".format(count),"a+") as file:
 									# print("CONTENT",content)
 									file.write(str(content)+"\n")
 
@@ -44,4 +44,10 @@ def extractArticles(path,no_of_articles):
 				break
 
 if __name__ == '__main__':
-	extractArticles(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",10)
+    try:
+        extractArticles("U:\Dissertation\TREC_Washington_Post_collection.v2.jl",100000)
+    except:
+        extractArticles(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",10)
+        
+        pass
+	
