@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+        # -*- coding: utf-8 -*-
 """
 Created on Thu Feb 13 11:10:50 2020
 
@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-data = pd.read_csv(r"E:\Intelligent Systems\Dissertation ####\Explainable-AI\subdata.csv").iloc[:1000,:4]
+data = pd.read_csv(r"D:\Intelligent Systems\Dissertation ####\Explainable-AI\subdata.csv").iloc[:1000,:4]
 data = data.fillna("undefined")
 labels = data.iloc[:,0]
 print(type(labels))
@@ -46,14 +46,14 @@ tfidf = TfidfVectorizer()
 normal = pd.DataFrame(tfidf.fit_transform(normal).toarray())
 normalTest = pd.DataFrame(tfidf.transform(normalTest).toarray())
 
-    	
+
 tfidf2 = TfidfVectorizer()
 cleanText = pd.DataFrame(tfidf2.fit_transform(cleanText).toarray())
 cleanTextTest = pd.DataFrame(tfidf2.transform(cleanTextTest).toarray())
 print("tfidf 2")
 
 ### joining all again
-X_train = pd.concat([(X_train.iloc[:,0]),normal,cleanText],axis=1) 
+X_train = pd.concat([(X_train.iloc[:,0]),normal,cleanText],axis=1)
 X_test = pd.concat([(X_test.iloc[:,0]),normalTest,cleanTextTest],axis=1)
 
 
@@ -97,7 +97,12 @@ score = np.sqrt(mean_squared_error(Y_test,Y_predict))
 print("\n Final Score is",score)
 
 ### saving specific variables
-import time
+# import datetime.datetime
+import os
+
+# XL = pd.DataFrame({"normal":normal,"normalTest":normalTest,"confusionMatrix":pd.DataFrame(confMatrix),"Y_test":Y_test,"Y_predict":pd.DataFrame(Y_predict)})
+
+XL = pd.concat([pd.DataFrame(Y_predict),Y_test],axis=1)
+writer = XL.to_csv("First_experiment.csv")
 
 
-	

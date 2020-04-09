@@ -46,18 +46,18 @@ def remove_accented_chars(text):
 
 ##	expanding contracted words
 def expand_contractions(text, contraction_mapping=CONTRACTION_MAP):
-	
-	contractions_pattern = re.compile('({})'.format('|'.join(contraction_mapping.keys())), 
+
+	contractions_pattern = re.compile('({})'.format('|'.join(contraction_mapping.keys())),
 									  flags=re.IGNORECASE|re.DOTALL)
 	def expand_match(contraction):
 		match = contraction.group(0)
 		first_char = match[0]
 		expanded_contraction = contraction_mapping.get(match)\
 								if contraction_mapping.get(match)\
-								else contraction_mapping.get(match.lower())                       
+								else contraction_mapping.get(match.lower())
 		expanded_contraction = first_char+expanded_contraction[1:]
 		return expanded_contraction
-		
+
 	expanded_text = contractions_pattern.sub(expand_match, text)
 	expanded_text = re.sub("'", "", expanded_text)
 	return expanded_text
@@ -107,7 +107,7 @@ def remove_stopwords(text, is_lower_case=False):
 		filtered_tokens = [token for token in tokens if token not in stopword_list]
 	else:
 		filtered_tokens = [token for token in tokens if token.lower() not in stopword_list]
-	filtered_text = ' '.join(filtered_tokens)    
+	filtered_text = ' '.join(filtered_tokens)
 	return filtered_text
 
 # remove_stopwords("The, and, if are stopwords, computer is not")
@@ -116,10 +116,10 @@ def remove_stopwords(text, is_lower_case=False):
 
 ##	Text Normalization (All the above functions combined)
 def normalize_corpus(corpus, html_stripping=True, contraction_expansion=True,
-					 accented_char_removal=True, text_lower_case=True, 
-					 text_lemmatization=True, special_char_removal=True, 
+					 accented_char_removal=True, text_lower_case=True,
+					 text_lemmatization=True, special_char_removal=True,
 					 stopword_removal=True, remove_digits=True, named_ent_recog=True):
-	
+
 	normalized_corpus = ""
 	file_text = ""
 	clean_text = ""
@@ -132,31 +132,33 @@ def normalize_corpus(corpus, html_stripping=True, contraction_expansion=True,
 		# remove accented characters
 		if accented_char_removal:
 			doc = remove_accented_chars(doc)
-		# expand contractions    
+		# expand contractions
 		if contraction_expansion:
 			doc = expand_contractions(doc)
-		# lowercase the text    
+		# lowercase the text
 		if text_lower_case:
 			doc = doc.lower()
-		# remove extra newlines
+		# remove extra newlinesd
 		doc = re.sub(r'[\r|\n|\r\n]+', ' ',doc)
 
 		# lemmatize text
 		if text_lemmatization:
 			clean_text += doc
 			doc = lemmatize_text(doc)
-		# remove special characters and\or digits    
+
+				
+		# remove special characters and\or digits
 		if special_char_removal:
-			# insert spaces between special characters to isolate them    
+			# insert spaces between special characters to isolate them
 			special_char_pattern = re.compile(r'([{.(-)!}])')
 			doc = special_char_pattern.sub(" \\1 ", doc)
-			doc = remove_special_characters(doc, remove_digits=remove_digits)  
+			doc = remove_special_characters(doc, remove_digits=remove_digits)
 		# remove extra whitespace
 		doc = re.sub(' +', ' ', doc)
 		# remove stopwords
 		if stopword_removal:
 			doc = remove_stopwords(doc, is_lower_case=text_lower_case)
-		
+
 		# named entity recognition
 		if named_ent_recog:
 			sentence_nlp = nlp(doc)
