@@ -1,0 +1,672 @@
+(8000,)
+(8000,)
+(8000, 338805)
+(8000,)
+
+features contain all documents feature like Nouns, proper nouns and noun phrases
+dataset:"D:\Intelligent Systems\Dissertation ####\Explainable-AI\all_nouns.csv"
+
+
+================================================================================
+Ridge Classifier
+Training: 
+RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize=False, random_state=None, solver='sag',
+                tol=0.01)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/_ridge.py:558: UserWarning: "sag" solver requires many iterations to fit an intercept with sparse inputs. Either set the solver to "auto" or "sparse_cg", or set a low "tol" and a high "max_iter" (especially if inputs are not standardized).
+  '"sag" solver requires many iterations to fit '
+trained model
+predicted using model
+accuracy:   0.713
+dimensionality: 338805
+density: 0.999964
+top 10 keywords per class:
+Local
+: laurel ct 18 grocery_store old_man lakes merchandise shoplifting feb_8_merchandise laurel_lakes_ct
+Politics
+: jan feb thefts break president_obama police romantic_recommendations states white_women undefined
+Wizards/NBA
+: jan property west east thefts motor hwy vehicle motor_vehicle_thefts jan_17_property
+Middle East
+: death i_dont patients comfort nursing belief wishes own_death ventilator worthwhile
+Redskins/NFL
+: mail loudoun 202 adoption_hours pet st_nw motor_vehicle_thefts jan_17_property undefined block
+Capitals/NHL
+: speech policies conservatives act discussion panel constitution connection panel_discussion us_constitution
+Sports
+: area border latino massachusetts attacks critics immigrants undefined flags american_flags
+Colleges
+: ohio measure health_care sen disclosure undefined point offices folks federal_offices
+Magazine
+: region ups accomplice jan lane vehicles windows cherrywood cherrywood_lane jan_24_windows
+Asia & Pacific
+: temperaments daughter fall_asleep parent parenting child kelly marguerite _margueritekellycom advice_
+World
+: sudanese_troops raghavan sudarsan_raghavan kenyans kenya darfur pengassan khartoum sudans sudan
+National Security
+: win senior aaa title tenorio paul_tenorio girls basketball boys junior
+Capital Business
+: delhi pakistans leiby india kabul nato islamabad pakistan beijing chinas
+Business
+: bookworld_ narrative author paperback memoir novels book_world novel book pp
+Education
+: consumer mufson analysts david_s_hilzenrath hilzenrath imf halzack sarah_halzack sec investors
+Books
+: censer abha bhattarai abha_bhattarai danielle marjorie_censer company firms danielle_douglas charity
+Obituaries
+: carrera katie_carrera defenseman mcphee nhl hunter vokoun ovechkin washington_capitals capitals
+Health & Science
+: cx acadia denali engine srx torque wheel horsepower nuts bolts
+AllMetSports
+: thompson tracee_hamilton clemson halftime mosley duke georgetown tracee terps hoyas
+Letters to the Editor
+: yjdp cappies_adult_mentors post mentors cappies_student_critics cappies_critics journalism workshop washington_post cappies
+Opinions
+: general_assembly tsp anita kumar anita_kumar ward john_wagner debonis tim_craig mike_debonis
+The Post's View
+: young_boys opener rosarios uniteds kansas_city dudar olsen mls_season_opener match pontius
+Style
+: low_cost recalibration lemming james_mcnerney_jr competitiveness mcnerney innovation incubators business_incubators collaborative_inspiration
+D.C. Politics
+: bill_turque jenna_johnson emma mathews achievement turque students schools teachers jay_mathews
+Discussions
+: weitz actor gomes tv viewers characters character hank stuever hank_stuever
+Going Out Guide
+: sarkozys edward_cody britains_leader putins cameron france britains minister putin moscow
+KidsPost
+: recipe pork sauce beer recommendations dave_mcintyre wines mcintyre recipes wine
+Maryland Politics
+: pg jane fritz_hahn kris guide guides_family_movie_reviews horwitz jane_horwitz kris_coronado coronado
+Europe
+: brian_vastag leitko whitney_fetterhoff aaron_leitko fetterhoff juliet_eilperin scientists disease study researchers
+Technology
+: latex backup_pump kee orchid orchids primer paint goldens colors c2
+Community Relations
+: startups singularity marty_nemko nemko example ceo innovations vivek wadhwa vivek_wadhwa
+Advice
+: detective peaceoholics cenziper closure specific_projects percent_closure_rate norris debbie_cenziper merriam closure_rate
+Wellness
+: bowen dickens kidsposts scientists animals tracy fun tracy_grant kidspost kids
+Innovations
+: mr ed metro march op feb page jan writer article
+On Leadership
+: storage garden_primer garden accessories primer terri terri_sapienza sapienza furniture damrosch
+Food
+: robert_mccartney mccartney dvorak martin_weil prosecutors prince block police kelly county
+Lifestyle
+: daters_ gene_weingarten lab amanda person_singular query _work_advice date_lab daters karla
+Real Estate
+: culkin happy_smiles rachel_langham claire patricks st_patricks_day_parade langham parade dillingham sengbusch
+National
+: aaron omalley isiah countys victor county_officials aaron_c_davis zapana victor_zapana leggett
+Music
+: revolt baghdad world_news_coverage joel_greenberg security_forces parliament mubarak uprising al cairo
+Travel
+: mr_gazzara actor ms_darcel movies gazzara mr_farentino darcel broadbent farentino films
+On Small Business
+: brougher catlin pilgrimage art aitken museums kennicott annie_leibovitzs personal_pilgrimage philip_kennicott
+Entertainment
+: recordings pianist dickey operas opera diva singer singers pop diva_whitney_houston
+Weddings
+: kline fertility lisa vannatter dr_goodwin federal_coach coe dr god lisa_miller
+Cars
+: security intelligence national_security_news us_officials deyoung pentagon karen_deyoung pincus walter_pincus national_security_coverage
+Theater & Dance
+: viera thomas_boswell fielder bryce zimmerman clubhouse spring_training baseball harper nationals
+World Business
+: retirement touchnote ge michelle_singletary bentley damn imagination app gt8 bentley_gt8
+None
+: daughter bernstein graduate adam_bernstein complications mrs bart bart_barnes grandchildren survivors
+Nationals/MLB
+: kinmont daughter_missy beautiful_fish colo_dick_franklin amy carmelita jeter shipley amy_shipley olympic
+Virginia Politics
+: spielberg leaders federal_coach_blog facebook _lily_cunningham _post_lead_editor post_lead lily_cunningham tom_fox leadership
+Africa
+: entrepreneur olga_khazan businesses khazan owners business entrepreneurs olga small_business_owners small_business
+Movies
+: kathleen_parker americans opinions samuelson dana dionne dana_milbank milbank _washpostcom postopinions
+Olympics
+: robert_barnes postpolitics justices congress gop santorum campaign davidson romney joe_davidson
+Investigations
+: neighborhoods real_estate neighborhood builders homes buyers estate harvey_s_jacobs medianpurchaseprice totalhomessold
+ call 301-985-5060.   robberies kirkwood pl.: patriots giants goodell quarterback mark_maske yards nfl_playoffs shanahan redskins nfl
+ and thoughts of living pushed aside thoughts of dying. when the end does come: cindy_boren espn boren steve_yanda yanda coach comcast acc ncaa_tournament ncaa
+ not a government program. on the other hand: freelance_writer farhi paul_farhi album music lisa hax carolyn_hax carolyn moraes
+ 3 p.m. jan. 13. a tip jar and juice were stolen from a donut shop. three people were seen fleeing with the property. belcrest rd.: mcmullen lovings premieres_sunday amish episode road_weve ganda hank stuever hank_stuever
+ in burma: company apples google ipad users stories apple hayley tsukayama hayley_tsukayama
+Museums
+: angela_castro chavezs raul capriles chavez raul_castro farc cuba fidel castro
+ 3500 block: mr_romney corruption mr_mcdonnell posts ms mr_obama board mr editorial editorial_board
+ preparing our residents for the jobs of tomorrow: shatners shatners_world broadway nelson washington_improv_theaters_valentines_date_tips nelson_pressley pressley theatre theater theaters
+ folger shakespeare library: traffic hedgpeth metros dana_hedgpeth halsey ashley_halsey_iii bike aratani lori_aratani transit
+The Americas
+: www airlines flights hotel entrees rooms andrea sachs travel andrea_sachs
+TV
+: broad_policy micron allen religious cuccinellis juvenile governors_office cuccinelli juvenile_justice kaine
+ unit block: shevchek silpasuvan keenan guests weddings laclede ellen mccarthy ellen_mccarthy wedding
+Transportation
+: vicky_hallett overeaters hallett publication item_e yoga regimen registration publication_date fitness
+ 6200 block: dunk mcgee john_wall michael_lee lin wall washington_wizards nba wittman wizards
+ 14200 block: cody haiti croatians abbas europes croatians_vote edward_cody europes_capitals birnbaum michael_birnbaum
+D.C. United/Soccer
+: stanley_kwan hong_kong_stock_exchange kane_funeral_home kong seng_bank seng_index hang mr_kwan kwan seng
+
+
+####
+Something went wrong, 'Home & Garden
+' label might not have 10 features in total
+
+
+####
+Something went wrong, ' 15600 block' label might not have 10 features in total
+
+
+####
+Something went wrong, 'Maryland
+' label might not have 10 features in total
+
+================================================================================
+Perceptron
+Training: 
+Perceptron(alpha=0.0001, class_weight=None, early_stopping=False, eta0=1.0,
+           fit_intercept=True, max_iter=100, n_iter_no_change=5, n_jobs=None,
+           penalty=None, random_state=0, shuffle=True, tol=0.001,
+           validation_fraction=0.1, verbose=0, warm_start=False)
+trained model
+predicted using model
+accuracy:   0.680
+dimensionality: 338805
+density: 0.031769
+top 10 keywords per class:
+Local
+: grocery_store ct old_man 18 merchandise laurel lakes shoplifting laurel_lakes_ct feb_8_merchandise
+Politics
+: foot_office_development foot_office_building foot_office foot_museums foot_museum foot_motor_home foot_monopole foot_mini foot_mansion zzzzs
+Wizards/NBA
+: vehicle jan west property thefts east motor hwy motor_vehicle_thefts jan_17_property
+Middle East
+: i_dont place death belief patients comfort ventilator wishes own_death worthwhile
+Redskins/NFL
+: foot_traffic foot_toy_hoop foot_tower_crane foot_three foot_terrace foot_tenant_fit foot_surgery foot_studio_unit foot_store_march block
+Capitals/NHL
+: football_players football_players_tear football_power football_playoffs panel constitution discussion us_constitution connection panel_discussion
+Sports
+: foot_surgery foot_studio_unit foot_storm_surges foot_store_march foot_store foot_stone_wall foot_terrace zzzzs flags american_flags
+Colleges
+: football_playoffs football_players_tear football_players football_player football_program zzzzs offices folks point federal_offices
+Magazine
+: foot_stone_wall foot_steel_boat foot_tunnel foot_toy_hoop windows vehicles lane cherrywood cherrywood_lane jan_24_windows
+Asia & Pacific
+: behavior good_manners friend q_i stepsons parenting temperaments marguerite advice_ _margueritekellycom
+World
+: union khartoum chinese_workers murle nuer sudans likuangole kenya kenyans pengassan
+National Security
+: josh_barr wolverines prep 3a basketball tenorio paul_tenorio junior boys ice_hockey
+Capital Business
+: delhi beijing burning kabul andrew_higgins nato richard_leiby leiby islamabad chinas
+Business
+: yardley william_henry_harrison paperback nazi_seance arthur_j_magida magida gail_collins account book pp
+Education
+: investors sarah ezra sarah_halzack sec mufson steven_mufson bloomberg halzack analysts
+Books
+: oconnell danielle firms jonathan_oconnell catherine_ho danielle_douglas marjorie_censer marjorie censer region
+Obituaries
+: nhl mcphee tampa eastern_conference_standings tampa_bay ovechkin tomas capitals vokoun backstrom
+Health & Science
+: diesel bolts horsepower awd acadia sl nissan_juke_sl_awd juke gmc_acadia_denali denali
+AllMetSports
+: hoyas blue_devils bcs_championship_ratings pointers hollis field techs halftime depaul mosley
+Letters to the Editor
+: educational_foundation social_reader substantive_way year_award workshop personal_post washington_post_company cappies post washington_post
+Opinions
+: telework herrity anita tsp richmond craig debonis mike_debonis john_wagner tim_craig
+The Post's View
+: wolff young_boys josh_wolff robbie_russell rosarios defender mls_season_opener dudar match pontius
+Style
+: potato_chip incubators inspiration low_cost recalibration lemming james_mcnerney_jr innovation collaborative_inspiration business_incubators
+D.C. Politics
+: mathews teachers vise officials middle_school bill_turque achievement emma turque jay_mathews
+Discussions
+: producer black_audiences mr_corneliuss weitz gomes reality_tv alcatraz corneliuss films viewers
+Going Out Guide
+: anti world_news_coverage moscow paris_france frances sarkozys france david_cameron britains_leader britains
+KidsPost
+: joe_yonan sauce frozen_vegetables madeira wine_recommendations recipes bargain_bottles vermouths white_vermouths_feeling wine
+Maryland Politics
+: jess_righthand fritz tiki coronado kris_coronado jess righthand guide 202 fritz_hahn
+Europe
+: vastag kaiser aaron_leitko disease study symptoms brian_vastag juliet_eilperin readers_views researchers
+Technology
+: inch_pillow margie brush sump paneling orchids latex backup_pump orchid primer
+Community Relations
+: example marty_nemko nemko sectors startups singularity vivek innovations wadhwa vivek_wadhwa
+Advice
+: closure dc_department moratorium specific_projects award debbie_cenziper merriam percent_closure_rate norris closure_rate
+Wellness
+: maine_girl dangerous_surgery proverbs mikulski animals kidsposts robots fun_girl_scout_facts kidspost kids
+Innovations
+: tense stress eating march president article citizens feb jan writer
+On Leadership
+: buerger storage huber terri terri_sapienza jeanne_huber subject_line viper sapienza snake
+Food
+: michael_e_ruane judge man petula_dvorak mccartney previous_columns robert_mccartney dvorak kelly county
+Lifestyle
+: _expletive_ reception_desk screen daters_ weingarten gene_weingarten karla _work_advice pms person_singular
+Real Estate
+: clover_t sunny_day_brightens rachel skin shirts gaithersburg claire langham dillingham sengbusch
+National
+: ohlinger davis victor legislature county_officials dimensions countys zapana victor_zapana aaron_c_davis
+Music
+: mahmoud joel saleh alice_fordham mubaraks tehran joel_greenberg ministry headlines world_news_coverage
+Travel
+: sinatras james_farentino ms_darcel mr_gazzara mr_farentino film gazzara darcel broadbent farentino
+On Small Business
+: roger_catlin tapies philip_kennicott brougher sculptor catlin museums aitken personal_pilgrimage annie_leibovitzs
+Entertainment
+: etten trel opera pernice ciani andsnes dickey violinist diva diva_whitney_houston
+Weddings
+: dr american_women vannatter coe nixon mrs lisa christian god lisa_miller
+Cars
+: walter detainees investigators presence obama_administration official national_security_news pincus walter_pincus national_security_coverage
+Theater & Dance
+: braun national_league baseman clubhouse harper bryce boswell thomas_boswell smart_decisions nationals
+World Business
+: michelle_singletary choppy bob_doll undefined gt8 bentley_gt8 imagination fake_candidate_costumes gate_february commemorate_presidents_day
+None
+: club crapster death gade white daughter retirement bart_barnes grandchildren survivors
+Nationals/MLB
+: summer_games kinmont missy daughter_missy beautiful_fish colo_dick_franklin prix carmelita olympic jeter
+Virginia Politics
+: employees mr_zaslow mulkey lily_cunningham post_lead form federal_coach_blog spielberg tom_fox leadership
+Africa
+: hennessey khatri sheila_h_khatri oh olga_khazan jason_oh businesses khazan small_business_owners olga
+Movies
+: dionne kathleen_parker david_ignatius local_opinions opinions dana_milbank outlook turkey postopinions _washpostcom
+Olympics
+: fahrenthold congress markon david_a_fahrenthold jerry_markon postpolitics dan robert_barnes davidson joe_davidson
+Investigations
+: estate roger_k_lewis irs neighborhood kass benny_l_kass medianpurchaseprice totalhomessold metro_station exclusion
+ call 301-985-5060.   robberies kirkwood pl.: redskins grossman coaches rutherford regular_season mark_maske new_york_giants_crush_atlanta_falcons shanahan nfl nfl_playoffs
+ and thoughts of living pushed aside thoughts of dying. when the end does come: comcast play cindy ncaa_tournament rival_blue_devils ncaa boren cindy_boren post post_top
+ not a government program. on the other hand: dan_zak hesse jessica_goldstein hax monica_hesse carolyn carolyn_hax farhi paul_farhi moraes
+ 3 p.m. jan. 13. a tip jar and juice were stolen from a donut shop. three people were seen fleeing with the property. belcrest rd.: documentary mcmullen premieres_sunday film amish hank stuever hank_stuever road_weve ganda
+ in burma: apples gb release zynga hayley tsukayama verge apple hayley_tsukayama stories
+Museums
+: juan angela bocaranda jungle fidel_castro castro juanita_castro angela_castro farc fidel
+ 3500 block: fraud carbon topic legislation mr_mcdonnell regime editorial mr board editorial_board
+ preparing our residents for the jobs of tomorrow: petosa sicks nelson nelson_pressley shatners shatners_world revival pressley washington_improv_theaters_valentines_date_tips theaters
+ folger shakespeare library: aratani metrorail authority metro_transit_police longs transportation dc_songwriter_longs red_tops metros transit
+The Americas
+: spirit_airlines guests travel hotel snow amtrak christopher_elliott spirit sachs andrea_sachs
+TV
+: talent_economy abortion employer micron religious bolling governors_office juvenile juvenile_justice kaine
+ unit block: dawley youngblood nicolaides boatright ellen_mccarthy mcgoram shevchek veit keenan laclede
+Transportation
+: pounders_group lenny mental grief zumba lenny_bernstein anxiety_support_group publication_date fitness_regimen regimen
+ 6200 block: franchise rashard nick dunk franchise_history lebron wall guys wittman wizards
+ 14200 block: vanik brazil guards edward_cody european_union birnbaum michael_birnbaum croatians croatians_vote europes_capitals
+D.C. United/Soccer
+: stanley kane_funeral_home hong_kong_stock_exchange stanley_kwan index seng_bank seng_index hang mr_kwan seng
+
+
+####
+Something went wrong, 'Home & Garden
+' label might not have 10 features in total
+
+
+####
+Something went wrong, ' 15600 block' label might not have 10 features in total
+
+
+####
+Something went wrong, 'Maryland
+' label might not have 10 features in total
+
+================================================================================
+Passive-Aggressive
+Training: 
+PassiveAggressiveClassifier(C=1.0, average=False, class_weight=None,
+                            early_stopping=False, fit_intercept=True,
+                            loss='hinge', max_iter=100, n_iter_no_change=5,
+                            n_jobs=None, random_state=None, shuffle=True,
+                            tol=0.001, validation_fraction=0.1, verbose=0,
+                            warm_start=False)
+trained model
+predicted using model
+accuracy:   0.738
+dimensionality: 338805
+density: 0.167914
+top 10 keywords per class:
+Local
+: grocery ct 18 lakes old_man grocery_store merchandise shoplifting feb_8_merchandise laurel_lakes_ct
+Politics
+: frontman_dan_auerbach frontline_workers frontline_work frontline_politics frontline_operator frontline_investigators frontline_employees frontline_agencies frontlines zzzzs
+Wizards/NBA
+: fugitive_zaeef east west property hwy thefts motor vehicle motor_vehicle_thefts jan_17_property
+Middle East
+: death i_dont comfort patients nursing belief wishes own_death ventilator worthwhile
+Redskins/NFL
+: frigid_air_westward frigid_afternoon frightful_screams frightening frighten_passengers frighten_commuters fright_fan frigid_sunshine zzzzs block
+Capitals/NHL
+: friendship_associations friendship_association_members friendship_area_motor_vehicle_thefts_rosemary_lane friendship_heights discussion panel connection constitution panel_discussion us_constitution
+Sports
+: friends_house friends_hope_publicity friends_home friends_happiness_underscores friends_garage friends_game friends_facebook zzzzs flags american_flags
+Colleges
+: frozen_leadership frozen_lakes frozen_lake frozen_ground frozen_frosting frozen_planets point offices folks federal_offices
+Magazine
+: friebe fridman frieden zzzzs lane vehicles windows cherrywood cherrywood_lane jan_24_windows
+Asia & Pacific
+: kids kelly parenting parent daughters daughter child marguerite _margueritekellycom advice_
+World
+: sudarsan raghavan sudarsan_raghavan kenyans darfur kenya khartoum pengassan sudans sudan
+National Security
+: aaa girls senior title basketball tenorio paul_tenorio ice_hockey junior boys
+Capital Business
+: delhi kabul richard_leiby nato leiby india pakistan islamabad beijing chinas
+Business
+: bookworld_ author novels paperback memoir narrative book_world novel book pp
+Education
+: bloomberg imf steven_mufson mufson sec hilzenrath david_s_hilzenrath analysts halzack sarah_halzack
+Books
+: firm catherine_ho region company censer marjorie_censer marjorie danielle_douglas firms charity
+Obituaries
+: boudreau tomas puck defenseman nhl mcphee hunter vokoun washington_capitals capitals
+Health & Science
+: acadia denali fuel srx torque engine wheel horsepower nuts bolts
+AllMetSports
+: mosley terps tracee_hamilton halftime tracee thompson depaul hoyas clemson blue_devils
+Letters to the Editor
+: cappies_adult_mentors atlas journalism cappies_critics cappies_student_critics mentors workshop post washington_post cappies
+Opinions
+: government_service tsp anita_kumar kumar agencies president_obamas_request john_wagner debonis mike_debonis tim_craig
+The Post's View
+: uniteds rosarios opener young_boys olsen kansas_city dudar mls_season_opener match pontius
+Style
+: low_cost recalibration james_mcnerney_jr lemming competitiveness mcnerney innovation incubators business_incubators collaborative_inspiration
+D.C. Politics
+: jenna students jenna_johnson mathews schools emma turque achievement teachers jay_mathews
+Discussions
+: producer scurlock characters weitz viewers gomes character hank stuever hank_stuever
+Going Out Guide
+: headlines sarkozys britains_leader paris cameron britains france putin minister moscow
+KidsPost
+: sauce beer dave_mcintyre vermouths white_vermouths_feeling recommendations mcintyre wines wine recipes
+Maryland Politics
+: 202 fritz horwitz guides_family_movie_reviews kris fritz_hahn guide jane_horwitz kris_coronado coronado
+Europe
+: fetterhoff kaiser brian_vastag leitko aaron_leitko juliet_eilperin disease readers_views study researchers
+Technology
+: gedeik latex margie orchids c2 orchid primer goldens paint colors
+Community Relations
+: startups nemko marty_nemko singularity vivek innovations ceo wadhwa vivek_wadhwa example
+Advice
+: adelson lanier specific_projects norris debbie_cenziper closure merriam housing percent_closure_rate closure_rate
+Wellness
+: fun_girl_scout_facts graders bowen scientists tracy tracy_grant animals fun kidspost kids
+Innovations
+: op tense metro march eating page feb article writer jan
+On Leadership
+: storage primer accessories kitchen garden terri terri_sapienza furniture sapienza damrosch
+Food
+: man manassas prince martin_weil police mccartney robert_mccartney dvorak kelly county
+Lifestyle
+: date weingarten gene_weingarten query amanda person_singular _work_advice date_lab daters karla
+Real Estate
+: manners shirts gaithersburg claire patricks st_patricks_day_parade langham dillingham parade sengbusch
+National
+: dimensions davis aaron county_officials victor countys victor_zapana zapana leggett aaron_c_davis
+Music
+: country mubarak ministry al world_news_coverage baghdad joel_greenberg parliament uprising cairo
+Travel
+: actor mr_farentino mr_gazzara ms_darcel gazzara darcel broadbent farentino movies films
+On Small Business
+: brougher catlin aitken design art kennicott museums annie_leibovitzs personal_pilgrimage philip_kennicott
+Entertainment
+: whitney operas trel recordings singers opera singer diva pop diva_whitney_houston
+Weddings
+: heirens coe vannatter dr_goodwin kline dr federal_coach women god lisa_miller
+Cars
+: deyoung pentagon official national_security_news us_officials security karen_deyoung national_security_coverage pincus walter_pincus
+Theater & Dance
+: thomas_boswell baseballs batting bryce baseball zimmerman clubhouse spring_training harper nationals
+World Business
+: retirement bob_doll damn bentley fake_candidate_costumes gate_february commemorate_presidents_day imagination bentley_gt8 gt8
+None
+: resident graduate daughter mrs bart complications mr bart_barnes grandchildren survivors
+Nationals/MLB
+: daughter_missy colo_dick_franklin boothe amy carmelita kinmont jeter shipley amy_shipley olympic
+Virginia Politics
+: twitter spielberg _post_lead_editor _lily_cunningham leaders facebook post_lead lily_cunningham tom_fox leadership
+Africa
+: entrepreneur businesses olga_khazan entrepreneurs khazan owners small_business_owners olga business small_business
+Movies
+: dana samuelson turkey outlook dionne opinions milbank dana_milbank _washpostcom postopinions
+Olympics
+: joe justices david_nakamura romney dan robert_barnes postpolitics campaign davidson joe_davidson
+Investigations
+: buyers harvey_s_jacobs house real_estate totalhomessold medianpurchaseprice neighborhoods homes estate neighborhood
+ call 301-985-5060.   robberies kirkwood pl.: qb goodell season regular_season mark_maske redskins yards shanahan nfl_playoffs nfl
+ and thoughts of living pushed aside thoughts of dying. when the end does come: steve_yanda yanda coach cindy_boren boren ncaa_tournament post ncaa rival_blue_devils post_top
+ not a government program. on the other hand: hesse jessica_goldstein freelance_writer hax lisa carolyn_hax farhi paul_farhi carolyn moraes
+ 3 p.m. jan. 13. a tip jar and juice were stolen from a donut shop. three people were seen fleeing with the property. belcrest rd.: lovings documentary mcmullen amish episode road_weve ganda hank stuever hank_stuever
+ in burma: gb users ipad company verge hayley tsukayama apple hayley_tsukayama stories
+Museums
+: chavez raul colombia raul_castro capriles juan farc cuba fidel castro
+ 3500 block: regime need corruption posts ms mr_obama board mr editorial editorial_board
+ preparing our residents for the jobs of tomorrow: revival broadway nelson improv nelson_pressley pressley theatre washington_improv_theaters_valentines_date_tips theater theaters
+ folger shakespeare library: dc_songwriter_longs halsey ashley_halsey_iii highway traffic metros aratani lori_aratani bike transit
+The Americas
+: tour www flights entrees hotel rooms andrea sachs travel andrea_sachs
+TV
+: micron governor religious cuccinellis cuccinelli allen governors_office juvenile juvenile_justice kaine
+ unit block: love keenan shevchek guests laclede weddings ellen mccarthy ellen_mccarthy wedding
+Transportation
+: vicky_hallett hallett zumba dance fitness_regimen registration publication_date yoga fitness regimen
+ 6200 block: john_wall franchise_history lebron dunk lin wall nba washington_wizards wittman wizards
+ 14200 block: croatians edward_cody haiti coup demonstrations croatians_vote abbas europes_capitals birnbaum michael_birnbaum
+D.C. United/Soccer
+: hong_kong_stock_exchange hong_kong hong kong seng_bank seng_index hang mr_kwan kwan seng
+
+
+####
+Something went wrong, 'Home & Garden
+' label might not have 10 features in total
+
+
+####
+Something went wrong, ' 15600 block' label might not have 10 features in total
+
+
+####
+Something went wrong, 'Maryland
+' label might not have 10 features in total
+
+================================================================================
+kNN
+Training: 
+KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=None, n_neighbors=10, p=2,
+                     weights='uniform')
+trained model
+predicted using model
+accuracy:   0.626
+================================================================================
+lr
+Training: 
+LogisticRegression(C=100000.0, class_weight=None, dual=False,
+                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
+                   max_iter=100, multi_class='auto', n_jobs=1, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+/usr/local/lib/python3.6/dist-packages/sklearn/linear_model/_logistic.py:940: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  extra_warning_msg=_LOGISTIC_SOLVER_CONVERGENCE_MSG)
+trained model
+predicted using model
+accuracy:   0.715
+dimensionality: 338805
+density: 1.000000
+top 10 keywords per class:
+Local
+: laurel grocery 18 old_man lakes grocery_store merchandise shoplifting feb_8_merchandise laurel_lakes_ct
+Politics
+: suters_tavern suters 0103_georgetown lura free_author_paul_butler thalben nasa_scientist_jacob_bleacher_discusses 1175_nasas_desert_rats charles_chaplins undefined
+Wizards/NBA
+: jan west east property hwy thefts motor motor_vehicle_thefts vehicle jan_17_property
+Middle East
+: i_dont patients comfort belief undefined nursing wishes own_death ventilator worthwhile
+Redskins/NFL
+: renwick_museum_craft steel_pans director_j pianist_alex_hassan form_improvisation soprano_karin_paludan glinka dave_petersen undefined block
+Capitals/NHL
+: valentines_day_event fearsome_beasts 4600_georgetown_improvisational_comedy gregerson discussion panel connection constitution panel_discussion us_constitution
+Sports
+: civil_war_regiment civil_war_life mathematician_archimedes civil_war_era_music jazz_veterans gongs 1200_lets undefined flags american_flags
+Colleges
+: yptdc hutto 4600_thursday sarah_coster improvisational point offices folks undefined federal_offices
+Magazine
+: dj_glowstik sheng sheng_introduces_taiwans_food_culture jan lane vehicles windows cherrywood cherrywood_lane jan_24_windows
+Asia & Pacific
+: parents daughter parent children kids kelly marguerite _margueritekellycom advice_ child
+World
+: sudarsan_raghavan kenya pengassan crisis khartoum darfur south oil sudans sudan
+National Security
+: title season girls game junior team points coach boys basketball
+Capital Business
+: taliban islamabad nato officials afghanistan india china beijing pakistan chinas
+Business
+: life history world author book_world books story novel pp book
+Education
+: sec money sarah_halzack consumer economy halzack investors ipad apple company
+Books
+: companies development executive market technology charity business firms firm company
+Obituaries
+: defenseman mcphee games nhl vokoun hunter game washington_capitals ovechkin capitals
+Health & Science
+: acadia denali srx torque fuel wheel horsepower engine nuts bolts
+AllMetSports
+: acc team guard maryland season games basketball coach points game
+Letters to the Editor
+: mentors student reviews app washington journalism workshop washington_post post cappies
+Opinions
+: agencies city debonis federal_employees mike_debonis district ward council service employees
+The Post's View
+: stadium kansas opener uniteds dudar mls_season_opener kansas_city olsen match pontius
+Style
+: education inspiration mcnerney jobs competitiveness business incubators innovation collaborative_inspiration business_incubators
+D.C. Politics
+: jay_mathews board maryland university parents teachers education school students schools
+Discussions
+: viewers characters actor character mr hank stuever film hank_stuever tv
+Going Out Guide
+: britains world_news_coverage headlines cameron russia france prime putin moscow minister
+KidsPost
+: bottles food meat recommendations wines beer dave_mcintyre mcintyre recipes wine
+Maryland Politics
+: guides kris jane 202 guide guides_family_movie_reviews horwitz kris_coronado coronado jane_horwitz
+Europe
+: juliet_eilperin research readers_views earth drugs disease researchers scientists study health
+Technology
+: water room walls kee goldens primer c2 color colors paint
+Community Relations
+: vivek wadhwa vivek_wadhwa innovations business technology innovation ceo companies example
+Advice
+: peaceoholics specific_projects lanier closure_rate merriam officials earmark homicide closure housing
+Wellness
+: bowen tracy parents tracy_grant books scientists fun animals kidspost kids
+Innovations
+: march president metro op page feb mr writer jan article
+On Leadership
+: space terri terri_sapienza sapienza room garden kitchen www furniture damrosch
+Food
+: adoption william animal dr prince police kelly noon rd county
+Lifestyle
+: job advice amanda lab date query _work_advice date_lab karla daters
+Real Estate
+: shirts manners gaithersburg claire patricks st_patricks_day_parade langham dillingham parade sengbusch
+National
+: state maryland zapana victor_zapana countys georges omalley leggett montgomery county
+Music
+: egypt headlines israel parliament world_news_coverage cairo forces security iran al
+Travel
+: darcel theater drama broadbent farentino movie actor movies film films
+On Small Business
+: aitken philip pilgrimage annie_leibovitzs personal_pilgrimage kennicott philip_kennicott museums art museum
+Entertainment
+: pianist album band singers diva_whitney_houston songs opera singer pop music
+Weddings
+: abortion obama dr faith voters mr santorum lisa_miller women god
+Cars
+: iraq official pentagon defense administration obama pincus walter_pincus officials security
+Theater & Dance
+: bryce league fielder zimmerman clubhouse spring_training spring harper baseball nationals
+World Business
+: trump ncaa iphone hayley tsukayama bentley_gt8 gt8 hayley_tsukayama retirement app
+None
+: resident bart wife graduate mrs daughter university mr grandchildren survivors
+Nationals/MLB
+: prix london kinmont trials carmelita jeter amy shipley amy_shipley olympic
+Virginia Politics
+: women _post_lead_editor _lily_cunningham post_lead lily_cunningham twitter tom_fox facebook leaders leadership
+Africa
+: companies khazan small_businesses olga small_business_owners owners entrepreneurs small_business businesses business
+Movies
+: outlook dana americans dana_milbank dionne romney opinions milbank _washpostcom postopinions
+Olympics
+: obamas gop rep campaign davidson congress obama joe_davidson santorum romney
+Investigations
+: area neighborhoods house homeowners mortgage neighborhood property homes estate home
+ call 301-985-5060.   robberies kirkwood pl.: giants shanahan nfl_playoffs game yards bowl quarterback season redskins nfl
+ and thoughts of living pushed aside thoughts of dying. when the end does come: season sports points coach espn espn2 sportsnet espnu comcast fm
+ not a government program. on the other hand: style dear_carolyn music farhi paul_farhi lisa hax moraes carolyn_hax carolyn
+ 3 p.m. jan. 13. a tip jar and juice were stolen from a donut shop. three people were seen fleeing with the property. belcrest rd.: documentary shows road_weve ganda tv film episode hank stuever hank_stuever
+ in burma: apples google users company ipad hayley tsukayama stories hayley_tsukayama apple
+Museums
+: chavezs raul_castro juan capriles farc fidel mexico cuba castro chavez
+ 3500 block: posts administration mr_obama mr_romney ms tax board editorial mr editorial_board
+ preparing our residents for the jobs of tomorrow: washington_improv_theaters_valentines_date_tips kennedy director dance broadway stage pressley theaters theatre theater
+ folger shakespeare library: highway bike halsey ashley_halsey_iii metros drivers traffic metro transportation transit
+The Americas
+: flights airlines andrea com sachs rooms hotel andrea_sachs www travel
+TV
+: bolling policy governors_office cuccinellis juvenile juvenile_justice allen governor cuccinelli kaine
+ unit block: marriage laclede weddings guests ellen friends mccarthy love ellen_mccarthy wedding
+Transportation
+: publication_date support org runners regimen st registration rd yoga fitness
+ 6200 block: loss team points game washington_wizards wittman wall lin nba wizards
+ 14200 block: minister russia news elections coverage world headlines officials world_news_coverage government
+D.C. United/Soccer
+: index hong_kong hong kong seng_bank seng_index hang mr_kwan kwan seng
+
+
+####
+Something went wrong, 'Home & Garden
+' label might not have 10 features in total
+
+
+####
+Something went wrong, ' 15600 block' label might not have 10 features in total
+
+
+####
+Something went wrong, 'Maryland
+' label might not have 10 features in total
+
+================================================================================
+Random forest
+Training: 
+RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='auto',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, n_estimators=100,
+                       n_jobs=None, oob_score=False, random_state=None,
+                       verbose=0, warm_start=False)
+trained model
+predicted using model
+accuracy:   0.608

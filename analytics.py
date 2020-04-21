@@ -22,13 +22,13 @@ def counting_features(texts):
     longWordsCount = np.zeros(len(texts)).reshape(-1,1)
     syllablesCount = np.zeros(len(texts)).reshape(-1,1)
 
-    # type token ratio is the no of unique words divided by total words
+    ## type token ratio is the no of unique words divided by total words
     typeTokenRatio = np.zeros(len(texts)).reshape(-1,1)
     wordCount = np.zeros(len(texts)).reshape(-1,1)
 
 
     for i,text in enumerate(texts):
-#        print(text)
+        # print(text)
         score = readability.getmeasures(text,lang="en")
         sentenceInfo = score["sentence info"]
         wordUsage = score["word usage"]
@@ -43,7 +43,7 @@ def counting_features(texts):
         typeTokenRatio[i] = sentenceInfo['type_token_ratio']
         wordCount[i] = sentenceInfo['words']
 
-    # Combining all of them into one
+    ## Combining all of them into one
     featureCounts = pd.DataFrame(data = np.concatenate((pronounCount,prepositionCount,conjunctionCount,complexWordsCount
                                            ,longWordsCount,syllablesCount,typeTokenRatio,wordCount),axis=1),
     columns=["pronounCount","prepositionCount","conjunctionCount","complexWordsCount","longWordsCount",
@@ -56,30 +56,42 @@ def preprocessing(texts):
     tokenizer = ToktokTokenizer()
     stopword_list = nltk.corpus.stopwords.words('english')
     cleanedText = []
+    entity = []
 
     for i,text in enumerate(texts):
-        # Lemmatization
+        words = ""
+        temp_entity = ""
+        ## Lemmatization
         text = nlp(text)
         text = ' '.join([word.lemma_ if word.lemma_ != '-PRON-' else word.text for word in text])
 
-        # removes Special Characters
+        ## removes Special Characters
         pattern = r'[^a-zA-z0-9\s]'
         text = re.sub(pattern,"",str(text))
-#        print(text)
+        # print(text)
 
-        #seperates each word
-        tokens = tokenizer.tokenize(text)
-        # removes spaces in each words, if any
+        ## seperates each word and lowercases as well
+        tokens = tokenizer.tokenize(text.lower())
+        ## removes spaces in each words, if any
         tokens = [token.strip() for token in tokens]
-        # filters stop words in tokens
+        ## filters stop words in tokens
         filtered_tokens = [token for token in tokens if token.lower() not in stopword_list]
-        cleanedText.append(filtered_tokens)
-#        print(cleanedText)
-#        break
+        for word in filtered_tokens:
+            words += word + " "
+        cleanedText.append(words)
+
+        ## Named entity recognition
+        words = nlp(words)
+        temp_entity += str([word for word in words if word.ent_type])
+        entity.append(temp_entity)
+
+        # print(words)
+        # print(cleanedText)
+        # break
         if i%500 == 0:
             print("Steps Done:",i)
 
-    return cleanedText
+    return cleanedText,entity
 
 
 if __name__ == "__main__":
@@ -91,6 +103,7 @@ if __name__ == "__main__":
         os.system("pip install -r requirements.txt")
         nltk.download('stopwords')
         os.system("python -m spacy download en_core_web_sm")
+        os.system("python -m textblob.download_corpora")
     except:
         pass
     '''

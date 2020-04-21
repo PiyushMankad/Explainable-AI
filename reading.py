@@ -45,9 +45,15 @@ def extractArticles(path,no_of_articles):
 
 if __name__ == '__main__':
     try:
-        extractArticles("U:\Dissertation\TREC_Washington_Post_collection.v2.jl",100000)
+        # extractArticles("U:\Dissertation\TREC_Washington_Post_collection.v2.jl",100000)
+        pass
     except:
         extractArticles(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",10)
         
         pass
+    import numpy as np
+    a = np.array([2,3,1000,2,2,44,12,8])
+    a*=2
+    b = np.array(a*2,dtype = np.int16)
+    print(a,b)
 	

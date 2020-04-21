@@ -2,3 +2,4 @@ readability
 nltk
 spacy
 beautifulsoup4
+textblob
