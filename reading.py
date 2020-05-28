@@ -13,25 +13,25 @@ def extractArticles(path,no_of_articles):
 
 			for i,(key,values) in enumerate(dic.items()):
 				## outputs all the key and value pairs
-				# print(key,":",values,"\n")
+				print(key,":",values,"\n")
 
 				try:
 					l = len(dic[key])
-					# print(type(dic[key]),len(dic[key]))
+					print(type(dic[key]),len(dic[key]))
 
 					for j in range(len(dic[key])):
-						# print(dic[key][0])
+						print(dic[key][0])
 						
 						for (key2,val2) in dic[key][j].items():
 							if key2 == "content":
 								## outputs all the content keys
 								content = dic[key][j][key2]
-								# print(key2,":",val2,"\n")
+								print(key2,":",val2,"\n")
 
 								## file writing for articles
 								with open("folder/article{}.txt".format(count),"a+") as file:
-									# print("CONTENT",content)
-									file.write(str(content)+"\n")
+									print("CONTENT",content)
+									# file.write(str(content)+"\n")
 
 				except:
 					pass
@@ -45,15 +45,11 @@ def extractArticles(path,no_of_articles):
 
 if __name__ == '__main__':
     try:
-        # extractArticles("U:\Dissertation\TREC_Washington_Post_collection.v2.jl",100000)
+        extractArticles(r"D:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",00000)
         pass
     except:
-        extractArticles(r"E:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",10)
+        extractArticles(r"D:\Intelligent Systems\Dissertation ####\TREC_Washington_Post_collection.v2.jl",10)
         
         pass
-    import numpy as np
-    a = np.array([2,3,1000,2,2,44,12,8])
-    a*=2
-    b = np.array(a*2,dtype = np.int16)
-    print(a,b)
+      
 	

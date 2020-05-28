@@ -2,10 +2,14 @@ import spacy
 import pandas as pd
 import pytextrank
 import re, os
-import analytics
+# import analytics
 from textblob import TextBlob
 
 
+## Gets NOUNS, NOUN PHRASES and PROPER NOUNS from the dataset
+
+
+## texts takes [mx1] shaped list
 def get_text_features(texts):
     noun = []
     properNoun = []
@@ -45,6 +49,7 @@ def get_text_features(texts):
             print(count,"Iterations are DONE")
     return noun,properNoun
 
+## texts takes [mx1] shaped list
 def get_noun_phrase(texts):
     noun_phrase = []
     count = 0
@@ -69,25 +74,27 @@ if __name__ == "__main__":
 
     STEPS = 5000
 
-    data = pd.read_csv("subdata.csv").iloc[:STEPS,:].fillna("undefined")
+    data = pd.read_csv("Categorised_labels.csv").iloc[:,:].fillna("undefined")
     texts = data["Clean"]
-    labels = data["Labels"]
-
+    labels = data["BroadLabels"]
+    print("starts")
+    
     ## text features
     noun,properNoun = get_text_features(texts)
     print("Nouns and Propn extracted")
 
     ## noun phrases
     noun_phrases = pd.DataFrame(get_noun_phrase(texts),columns=["Noun Phrases"])
-    noun_phrases["Labels"] = labels
+    noun_phrases["BroadLabels"] = labels
     noun_phrases["Noun"] = noun
     noun_phrases["Propernoun"] = properNoun
-    noun_phrases.to_csv("all_nouns5000.csv",index=False)
+    noun_phrases["Score"] = data["Score"]
+    noun_phrases.to_csv("Categorised_labels_textFeatures.csv",index=False)
 
 
     ## extracting counted features
+    # print("import analytics.py in the import group above")
     # featureCounts = analytics.counting_features(texts)
-
     # ## making a CSV
     # featureCounts['Noun'] = noun
     # featureCounts['Labels'] = labels
